@@ -57,3 +57,4 @@ gem 'declarative_authorization'
 
 gem 'unicorn'
 gem 'foundation-rails'
+gem 'grape'
