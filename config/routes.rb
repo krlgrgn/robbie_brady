@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'static_pages/home'
 
   mount RobbieBrady::API => '/api'
+  mount GrapeSwaggerRails::Engine => '/swagger' if Rails.env.development?
 
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
